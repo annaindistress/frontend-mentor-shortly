@@ -1,15 +1,16 @@
 import { ReactNode } from "react";
-import { BASE_URL } from "../constants";
+import { BASE_URL } from "@/app/constants";
 
 interface ButtonProps {
   children: ReactNode;
   href?: string;
+  className?: string;
 }
 
-function Button({ children, href = "/#" }: ButtonProps) {
+function Button({ children, href = "/#", className = "" }: ButtonProps) {
   return (
     <a
-      className="bg-teal-450 hover:bg-teal-250 focus-within:bg-teal-250 rounded-full px-6 py-2.5 text-white"
+      className={`bg-primary-200 hover:bg-primary-100 focus-within:bg-primary-100 custom-focus rounded-full px-6 py-3 text-white ${className}`}
       href={`${BASE_URL}${href}`}
     >
       {children}

@@ -9,14 +9,15 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        teal: {
-          250: "#9ae3e3",
-          450: "#2bd0d0",
+        primary: {
+          100: "#9ae3e3",
+          200: "#2bd0d0",
         },
-        violet: {
+        secondary: {
           100: "#4b3f6b",
           200: "#3a3054",
           300: "#34313d",
+          400: "#232127",
         },
       },
     },

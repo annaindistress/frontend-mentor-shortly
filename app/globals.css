@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .custom-focus {
+    @apply outline-none ring-blue-500 ring-offset-4 focus-visible:ring;
+  }
+}

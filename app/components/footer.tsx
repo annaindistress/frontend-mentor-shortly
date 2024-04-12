@@ -1,6 +1,6 @@
-import Logo from "./logo";
+import Logo from "@/app/components/logo";
 import Social from "@/app/components/social";
-import { BASE_URL } from "../constants";
+import { BASE_URL } from "@/app/constants";
 
 const navigationItems = [
   {

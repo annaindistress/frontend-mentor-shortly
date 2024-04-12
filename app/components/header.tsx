@@ -1,4 +1,4 @@
-import Logo from "./logo";
+import Logo from "@/app/components/logo";
 import Navigation from "@/app/components/navigation";
 
 function Header() {

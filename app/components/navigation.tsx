@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import clsx from "clsx";
-import { BASE_URL } from "../constants";
+import { BASE_URL } from "@/app/constants";
 import Burger from "@/app/assets/burger.svg";
 import Button from "@/app/components/button";
 

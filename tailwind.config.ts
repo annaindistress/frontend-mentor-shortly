@@ -20,6 +20,12 @@ const config: Config = {
           400: "#232127",
         },
       },
+      backgroundImage: {
+        "cta-mobile-pattern":
+          "url('/frontend-mentor-shortly/cta-mobile-pattern.svg')",
+        "cta-desktop-pattern":
+          "url('/frontend-mentor-shortly/cta-desktop-pattern.svg')",
+      },
     },
   },
   plugins: [],

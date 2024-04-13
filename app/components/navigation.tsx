@@ -47,7 +47,9 @@ function Navigation() {
         >
           Login
         </a>
-        <Button className="md:mt-[-5px]">Sign up</Button>
+        <Button size="sm" className="md:mt-[-5px]">
+          Sign up
+        </Button>
       </nav>
     </>
   );

@@ -4,9 +4,9 @@ import { BASE_URL } from "@/app/constants";
 
 function Hero() {
   return (
-    <section className=" w-screen overflow-hidden pb-40 lg:pb-36">
+    <section className="w-screen overflow-hidden pb-40 lg:pb-36">
       <div className="mx-auto grid max-w-[1158px] lg:grid-cols-[615px_1fr] lg:pb-1.5 lg:pt-1">
-        <div className=" w-screen px-6 pb-2 text-center lg:w-auto lg:pt-14 lg:text-start ">
+        <div className="w-screen px-6 pb-2 text-center lg:w-auto lg:pt-14 lg:text-start ">
           <p className="text-secondary-300 mb-4 text-[42px] font-bold leading-[48px] tracking-[-1.05px] md:mb-1.5 md:text-[80px] md:leading-[90px] md:tracking-[-2px]">
             More than just shorter links
           </p>
@@ -14,9 +14,7 @@ function Hero() {
             Build your brand’s recognition and get detailed insights on how your
             links are performing.
           </p>
-          <Button className="px-10 py-[18px] text-xl leading-none">
-            Get started
-          </Button>
+          <Button size="lg">Get started</Button>
         </div>
         <picture className="row-start-1 mx-auto mb-9 w-[511px] md:w-[733px] lg:col-start-2 lg:mb-0">
           <source

@@ -1,4 +1,5 @@
 import Hero from "@/app/components/hero";
+import Cta from "@/app/components/cta";
 
 export default function Home() {
   return (
@@ -7,6 +8,7 @@ export default function Home() {
         Shortly － URL shortening API challenge on Frontend Mentor
       </h1>
       <Hero />
+      <Cta />
     </>
   );
 }

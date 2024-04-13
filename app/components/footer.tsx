@@ -19,7 +19,7 @@ const navigationItems = [
 
 function Footer() {
   return (
-    <footer className="bg-secondary-400 px-6 py-14 text-center capitalize text-white md:py-[72px] lg:text-start">
+    <footer className="bg-secondary-400 px-6 py-[54px] text-center capitalize text-white md:py-[72px] lg:text-start">
       <div className="mx-auto grid max-w-[1110px] gap-11 lg:grid-cols-[1fr_repeat(2,_max-content)] lg:items-start lg:gap-[70px]">
         <Logo className="mx-auto mb-1.5 lg:ms-0" />
         <ul className="grid gap-[37px] tracking-[-0.25px] md:grid-cols-3 md:gap-20">

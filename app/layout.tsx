@@ -4,7 +4,11 @@ import "@/app/globals.css";
 import Header from "@/app/components/header";
 import Footer from "@/app/components/footer";
 
-const poppins = Poppins({ subsets: ["latin"], weight: ["500", "700"] });
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["500", "700"],
+  style: ["normal", "italic"],
+});
 
 export const metadata: Metadata = {
   title: "Frontend Mentor | Shortly",

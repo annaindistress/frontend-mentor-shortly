@@ -23,7 +23,7 @@ const statsInfo = [
 function Stats() {
   return (
     <section className="bg-slate-100 px-6 text-center">
-      <div className="mx-auto max-w-[1110px] py-20 md:py-[120px]">
+      <div className="mx-auto max-w-[1110px] pb-[78px] md:pb-[120px]">
         <h2 className="title mb-4 text-secondary-300">Advanced Statistics</h2>
         <p className="mx-auto mb-[92px] max-w-[460px] text-base leading-7 tracking-[0.11px] md:mb-[100px] md:max-w-[540px] md:text-lg md:leading-8">
           Track how your links are performing across the web with our advanced

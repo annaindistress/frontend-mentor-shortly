@@ -25,6 +25,10 @@ const config: Config = {
           "url('/frontend-mentor-shortly/cta-mobile-pattern.svg')",
         "cta-desktop-pattern":
           "url('/frontend-mentor-shortly/cta-desktop-pattern.svg')",
+        "form-mobile-pattern":
+          "url('/frontend-mentor-shortly/form-mobile-pattern.svg')",
+        "form-desktop-pattern":
+          "url('/frontend-mentor-shortly/form-desktop-pattern.svg')",
       },
     },
   },

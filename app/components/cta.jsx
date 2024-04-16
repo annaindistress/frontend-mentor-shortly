@@ -7,7 +7,11 @@ function Cta() {
       <p className="title mb-4 mt-2.5 md:mb-8 md:mt-0">
         Boost your links today
       </p>
-      <Button size="lg" className="mb-2.5 md:mb-0">
+      <Button
+        href="/#"
+        size="lg"
+        className="mb-2.5 ring-offset-secondary-200 md:mb-0"
+      >
         Get started
       </Button>
     </section>

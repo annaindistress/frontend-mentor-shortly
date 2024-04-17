@@ -1,6 +1,5 @@
 import { ReactNode } from "react";
 import clsx from "clsx";
-import { BASE_URL } from "@/app/constants";
 
 interface ButtonProps {
   children: ReactNode;
@@ -28,7 +27,7 @@ function Button({
           "px-6 py-3": size === "sm",
           "px-10 py-[18px] text-xl leading-none": size === "lg",
         })}
-        href={`${BASE_URL}${href}`}
+        href={href}
       >
         {children}
       </a>

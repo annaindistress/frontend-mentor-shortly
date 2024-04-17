@@ -1,6 +1,5 @@
 import Logo from "@/app/components/logo";
 import Social from "@/app/components/social";
-import { BASE_URL } from "@/app/constants";
 
 const navigationItems = [
   {
@@ -30,8 +29,8 @@ function Footer() {
                 {item.links.map((link) => (
                   <li key={link}>
                     <a
-                      href={`${BASE_URL}/#`}
-                      className="hover:text-primary-200 focus-visible:text-primary-200 custom-focus ring-offset-secondary-400 rounded-md text-[15px] leading-[18px] text-stone-300"
+                      href="/#"
+                      className="custom-focus rounded-md text-[15px] leading-[18px] text-stone-300 ring-offset-secondary-400 hover:text-primary-200 focus-visible:text-primary-200"
                     >
                       {link}
                     </a>

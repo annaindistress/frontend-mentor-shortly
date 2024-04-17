@@ -8,7 +8,6 @@ export function useLocalStorage(key: string, initialValue: any) {
         const parsedItem = item ? JSON.parse(item) : initialValue;
         return Array.isArray(parsedItem) ? parsedItem : [];
       } catch (error) {
-        console.log(error);
         return initialValue;
       }
     }
@@ -18,10 +17,8 @@ export function useLocalStorage(key: string, initialValue: any) {
   const setValue = (value: any) => {
     if (typeof window !== "undefined") {
       try {
-        const valueToStore =
-          value instanceof Function ? value(storedValue) : value;
-        setStoredValue(valueToStore);
-        window.localStorage.setItem(key, JSON.stringify(valueToStore));
+        setStoredValue(value);
+        window.localStorage.setItem(key, JSON.stringify(value));
       } catch (error) {
         console.log(error);
       }

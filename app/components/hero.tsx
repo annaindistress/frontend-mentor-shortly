@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Button from "@/app/components/button";
-import { BASE_URL } from "@/app/constants";
 
 function Hero() {
   return (
@@ -21,10 +20,10 @@ function Hero() {
         <picture className="row-start-1 mx-auto mb-9 w-[511px] md:w-[733px] lg:col-start-2 lg:mb-0">
           <source
             media="(min-width: 768px)"
-            srcSet={`${BASE_URL}/hero-desktop.svg`}
+            srcSet="/hero-desktop.svg"
           />
           <Image
-            src={`${BASE_URL}/hero-mobile.svg`}
+            src="hero-mobile.svg"
             alt="Image of a man sitting near a computer and typing on the keyboard"
             width={511}
             height={337}

@@ -1,4 +1,3 @@
-"use client";
 import { ChangeEvent, FormEvent, useState } from "react";
 import clsx from "clsx";
 import Button from "@/app/components/button";

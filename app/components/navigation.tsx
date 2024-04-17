@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import clsx from "clsx";
-import { BASE_URL } from "@/app/constants";
 import Burger from "@/app/assets/burger.svg";
 import Button from "@/app/components/button";
 
@@ -33,7 +32,7 @@ function Navigation() {
           {navigationLinks.map((link) => (
             <li key={link}>
               <a
-                href={`${BASE_URL}/#`}
+                href="/#"
                 className="custom-focus rounded-md md:hover:text-secondary-300 md:focus-visible:text-secondary-300"
               >
                 {link}
@@ -42,7 +41,7 @@ function Navigation() {
           ))}
         </ul>
         <a
-          href={`${BASE_URL}/#`}
+          href="/#"
           className="custom-focus rounded-md md:hover:text-secondary-300 md:focus-visible:text-secondary-300"
         >
           Login

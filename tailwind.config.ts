@@ -21,14 +21,10 @@ const config: Config = {
         },
       },
       backgroundImage: {
-        "cta-mobile-pattern":
-          "url('/frontend-mentor-shortly/cta-mobile-pattern.svg')",
-        "cta-desktop-pattern":
-          "url('/frontend-mentor-shortly/cta-desktop-pattern.svg')",
-        "form-mobile-pattern":
-          "url('/frontend-mentor-shortly/form-mobile-pattern.svg')",
-        "form-desktop-pattern":
-          "url('/frontend-mentor-shortly/form-desktop-pattern.svg')",
+        "cta-mobile-pattern": "url('/cta-mobile-pattern.svg')",
+        "cta-desktop-pattern": "url('/cta-desktop-pattern.svg')",
+        "form-mobile-pattern": "url('/form-mobile-pattern.svg')",
+        "form-desktop-pattern": "url('/form-desktop-pattern.svg')",
       },
     },
   },

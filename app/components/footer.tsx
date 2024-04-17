@@ -24,7 +24,7 @@ function Footer() {
         <ul className="grid gap-[37px] tracking-[-0.25px] md:grid-cols-3 md:gap-20">
           {navigationItems.map((item) => (
             <li key={item.section}>
-              <span className="mb-5 block">{item.section}</span>
+              <span className="mb-5 block font-bold">{item.section}</span>
               <ul className="grid gap-2.5">
                 {item.links.map((link) => (
                   <li key={link}>

@@ -1,5 +1,4 @@
 "use client";
-import clsx from "clsx";
 import Form from "@/app/components/form";
 import LinkItem from "@/app/components/link-item";
 import { useLocalStorage } from "@/app/hooks/useLocalStorage";
@@ -19,12 +18,7 @@ function LinkManager() {
   }
 
   return (
-    <section
-      className={clsx("grid gap-6 bg-slate-100 px-6", {
-        "pb-[56px] md:pb-[96px]": !isClient || data.length === 0,
-        "pb-[80px] md:pb-[120px]": isClient && data.length > 0,
-      })}
-    >
+    <section className="grid gap-6 bg-slate-100 px-6 pb-[80px] md:pb-[120px]">
       <h2 className="sr-only">Shorten a link</h2>
       <Form onSubmit={handleSubmit} />
       {isClient && data.length > 0 && (

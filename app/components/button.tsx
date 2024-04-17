@@ -37,14 +37,11 @@ function Button({
     <button
       type={type}
       onClick={onClick}
-      className={clsx(
-        `rounded-[5px] px-3 py-3.5 text-lg leading-5 ${baseStyles}`,
-        {
-          "md:w-[103px] md:rounded md:text-[15px]": size === "sm",
-          "md:rounded-[10px] md:px-10 md:py-4 md:text-xl md:leading-6":
-            size === "lg",
-        },
-      )}
+      className={clsx(`rounded-[5px] px-3 text-base leading-5 ${baseStyles}`, {
+        "py-2.5 md:w-[103px] md:text-[15px]": size === "sm",
+        "py-3.5 md:rounded-[10px] md:px-10 md:py-4 md:text-xl md:leading-6":
+          size === "lg",
+      })}
     >
       {children}
     </button>

@@ -1,14 +1,15 @@
 import { useState } from "react";
-import { UrlArray } from "../types";
 
-export function useLocalStorage(initialValue: unknown, key: string) {
+export function useLocalStorage(key: string, initialValue: any) {
   const [storedValue, setStoredValue] = useState(() => {
     if (typeof window !== "undefined") {
       try {
         const item = window.localStorage.getItem(key);
-        return item ? JSON.parse(item) : initialValue;
+        const parsedItem = item ? JSON.parse(item) : initialValue;
+        return Array.isArray(parsedItem) ? parsedItem : [];
       } catch (error) {
         console.log(error);
+        return initialValue;
       }
     }
     return initialValue;

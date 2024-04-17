@@ -8,6 +8,7 @@ interface ButtonProps {
   className?: string;
   size?: "sm" | "lg";
   type?: "button" | "submit" | "reset";
+  onClick?: () => void;
 }
 
 function Button({
@@ -16,8 +17,9 @@ function Button({
   className = "",
   size = "sm",
   type = "button",
+  onClick = () => {},
 }: ButtonProps) {
-  const baseStyles = `custom-focus inline-block bg-primary-200 font-bold capitalize text-white focus-within:bg-primary-100 hover:bg-primary-100 ${className}`;
+  const baseStyles = `custom-focus inline-block bg-primary-200 font-bold capitalize text-white focus-visible:bg-primary-100 hover:bg-primary-100 ${className}`;
 
   if (href !== "")
     return (
@@ -35,7 +37,15 @@ function Button({
   return (
     <button
       type={type}
-      className={`rounded-md px-3 py-3.5 text-lg leading-5 md:rounded-[10px] md:px-10 md:py-4 md:text-xl md:leading-6 ${baseStyles}`}
+      onClick={onClick}
+      className={clsx(
+        `rounded-[5px] px-3 py-3.5 text-lg leading-5 ${baseStyles}`,
+        {
+          "md:w-[103px] md:rounded md:text-[15px]": size === "sm",
+          "md:rounded-[10px] md:px-10 md:py-4 md:text-xl md:leading-6":
+            size === "lg",
+        },
+      )}
     >
       {children}
     </button>

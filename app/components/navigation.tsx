@@ -34,7 +34,7 @@ function Navigation() {
             <li key={link}>
               <a
                 href={`${BASE_URL}/#`}
-                className="custom-focus rounded-md md:focus-within:text-secondary-300 md:hover:text-secondary-300"
+                className="custom-focus rounded-md md:hover:text-secondary-300 md:focus-visible:text-secondary-300"
               >
                 {link}
               </a>
@@ -43,7 +43,7 @@ function Navigation() {
         </ul>
         <a
           href={`${BASE_URL}/#`}
-          className="custom-focus rounded-md md:focus-within:text-secondary-300 md:hover:text-secondary-300"
+          className="custom-focus rounded-md md:hover:text-secondary-300 md:focus-visible:text-secondary-300"
         >
           Login
         </a>

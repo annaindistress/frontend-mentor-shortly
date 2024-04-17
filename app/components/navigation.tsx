@@ -22,7 +22,7 @@ function Navigation() {
       </button>
       <nav
         className={clsx(
-          "absolute inset-x-6 top-full grid items-center gap-6 rounded-[10px] bg-secondary-200 px-6 py-10 text-center text-lg font-bold capitalize text-white md:static md:grid md:grid-cols-[1fr_repeat(2,_max-content)] md:gap-9 md:bg-transparent md:p-0 md:text-[15px] md:leading-[18px] md:text-zinc-400",
+          "absolute inset-x-6 top-full z-10 grid items-center gap-6 rounded-[10px] bg-secondary-200 px-6 py-10 text-center text-lg font-bold capitalize text-white md:static md:grid md:grid-cols-[1fr_repeat(2,_max-content)] md:gap-9 md:bg-transparent md:p-0 md:text-[15px] md:leading-[18px] md:text-zinc-400",
           {
             hidden: !isOpen,
           },

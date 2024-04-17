@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { UrlArray } from "../types";
 
-export function useLocalStorage(key: string, initialValue: unknown) {
+export function useLocalStorage(initialValue: unknown, key: string) {
   const [storedValue, setStoredValue] = useState(() => {
     if (typeof window !== "undefined") {
       try {

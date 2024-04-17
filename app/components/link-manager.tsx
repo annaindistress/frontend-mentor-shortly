@@ -6,7 +6,7 @@ import { useLocalStorage } from "@/app/hooks/useLocalStorage";
 import { UrlArray, UrlItem } from "@/app/types";
 
 function LinkManager() {
-  const [data, setData] = useLocalStorage("", "links");
+  const [data, setData] = useLocalStorage([], "links");
 
   function handleSubmit(newItem: UrlItem) {
     setData((items: UrlArray) => [...items, newItem]);

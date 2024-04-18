@@ -28,7 +28,7 @@ Users should be able to:
 ## Links
 
 - [Solution URL](https://github.com/annaindistress/frontend-mentor-shortly)
-- [Live Site URL](https://annaindistress.github.io/frontend-mentor-shortly/)
+- [Live Site URL](https://frontend-mentor-shortly-kappa.vercel.app/)
 
 ## Built with
 
